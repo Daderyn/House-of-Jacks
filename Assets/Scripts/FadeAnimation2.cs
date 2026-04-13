@@ -5,15 +5,33 @@ using System.Collections;
 public class FadeAnimation2 : MonoBehaviour
 {
     private Image characterImage;
-
+    public static int BugCounter = 0;
     void Awake() {
         characterImage = GetComponent<Image>();
     }
-
+    
     // This makes the command available in your Yarn Script
     [YarnCommand("fade")]
     public void FadeCharacter(string direction) {
-        float targetAlpha = (direction == "in") ? 1f : 0.3f;
+        float targetAlpha;
+
+        if (direction == "in") {
+            targetAlpha = 1f;
+        } else {
+            
+            if(GetComponent<Button>() != null){
+                targetAlpha=0f;
+                BugCounter++;
+            }
+            else{
+                targetAlpha=0.3f;
+            }
+            // Optional: Disable the button so it can't be clicked while invisible
+            if (GetComponent<Button>() != null) {
+                GetComponent<Button>().interactable = false;
+            }
+        }
+
         StartCoroutine(DoFade(targetAlpha));
     }
 

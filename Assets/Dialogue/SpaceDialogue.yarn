@@ -3,6 +3,7 @@
 /// Whether Capsley like you or not. This starts true, but may change.
 <<declare $space_dude_likes_you = true as bool>>
 <<declare $space_girl_likes_you = true as bool>>
+
 /// The player's name. The player chooses this. It starts empty.
 <<declare $player_name = "" as string>>
 
@@ -23,8 +24,8 @@ Space_dude: Who are you then?
 <<else>>
     Space_dude: No need to be so rude...
     Space_dude: Maybe you should be called Grumpy {$player_name}.
-     
 <<endif>>
+    Space_dude: I'll be going now.
     <<fade space_man_0 out>>  
 
 Space_girl: Hello, I am Space girl.
@@ -44,9 +45,9 @@ Space_girl: Who are you then?
 <<else>>
     Space_girl: No need to be so rude...
     Space_girl: Maybe you should be called Grumpy {$player_name}.
-     
 <<endif>>
-    <<fade space_women_0 out>>  
 
+<<fade space_women_0 out>>  
+<<show_button SceneManager>>
 ===
 
