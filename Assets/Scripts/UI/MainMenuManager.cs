@@ -3,7 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public GameObject MainMenu, CreditsMenu, SettingsMenu;  
+    public GameObject MainMenu, CreditsMenu;  
+
+    public void Start()
+    {
+        CloseAll();
+        OpenMainMenu();
+    }
 
     public void SwitchScene(string sceneName)
     {
@@ -19,18 +25,12 @@ public class MainMenuManager : MonoBehaviour
     public void OpenMainMenu()
     {
         CloseAll();
-        CreditsMenu.SetActive(true);
+        MainMenu.SetActive(true);
     }
     public void OpenCredits()
     {
         CloseAll();
         CreditsMenu.SetActive(true);
-    }
-
-    public void OpenSettings()
-    {
-        CloseAll();
-        SettingsMenu.SetActive(true);
     }
 
     public void QuitGame()
