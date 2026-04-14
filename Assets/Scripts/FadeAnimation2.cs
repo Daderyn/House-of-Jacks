@@ -48,4 +48,5 @@ public class FadeAnimation2 : MonoBehaviour
             yield return null;
         }
     }
+
 }

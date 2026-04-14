@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6aca430f4f414ea439f8510194ee41b7
+guid: e32a43fae61e3d44aa5d6d7e802a0f10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4057930890152675139
-    second: Nameplate_0
+      213: -8506197058116485001
+    second: Shocked ( blue) _0
+  - first:
+      213: 51608639863957181
+    second: Shocked ( blue) _1
+  - first:
+      213: 50577735258896886
+    second: Shocked ( blue) _2
+  - first:
+      213: -2774943157164802908
+    second: Shocked ( blue) _3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +61,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 29, y: 8, z: 34, w: 8}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nameplate_0
+      name: Shocked ( blue) _0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0
-        width: 387
-        height: 80
+        x: 297
+        y: 2584
+        width: 74
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 9, z: 0, w: 7}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db87d51fa555fa7c0800000000000000
-      internalID: -4057930890152675139
+      spriteID: 7708e79e7dae3f980800000000000000
+      internalID: -8506197058116485001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shocked ( blue) _1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2581
+        width: 38
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6ae66d8c957b000800000000000000
+      internalID: 51608639863957181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shocked ( blue) _2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2257
+        width: 85
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f976a7ae20b3b000800000000000000
+      internalID: 50577735258896886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shocked ( blue) _3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 423
+        width: 1596
+        height: 2063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac7a4d96eb6d79d0800000000000000
+      internalID: -2774943157164802908
       vertices: []
       indices: 
       edges: []
@@ -138,8 +213,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a647fad0e1e933b40840ed0903d50d97
-    internalID: 1703613292
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Nameplate_0: -4057930890152675139
+      Shocked ( blue) _0: -8506197058116485001
+      Shocked ( blue) _1: 51608639863957181
+      Shocked ( blue) _2: 50577735258896886
+      Shocked ( blue) _3: -2774943157164802908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

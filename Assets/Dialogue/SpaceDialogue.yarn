@@ -1,51 +1,78 @@
 ﻿title: Start
 ---
-/// Whether Capsley like you or not. This starts true, but may change.
-<<declare $space_dude_likes_you = true as bool>>
-<<declare $space_girl_likes_you = true as bool>>
 
-/// The player's name. The player chooses this. It starts empty.
-<<declare $player_name = "" as string>>
 
-Space_dude: Hello, I am Space dude.
-Space_dude: Who are you then?
+There is nothing, just endless sleepy stretches of quiet extending infinitely into the distance. 
 
--> I'm Capsule, but my friends call me "Tic Tac". No idea why...
-    <<set $player_name to "Tic Tac">>
--> The name's Triquandle.
-    <<set $player_name to "Triquandle">>
--> Pyramid. Why - who wants to know?
-    <<set $player_name to "Pyramid">>
-    <<set $space_dude_likes_you to false>>
+Then, a fantastic swirl of coloratura and the color of grease on water, a warm and gentle current in the crisp waves. 
 
-<<if $space_dude_likes_you>>
-    Space_dude: Nice to meet you {$player_name}!
-    
-<<else>>
-    Space_dude: No need to be so rude...
-    Space_dude: Maybe you should be called Grumpy {$player_name}.
-<<endif>>
-    Space_dude: I'll be going now.
-    <<fade space_man_0 out>>  
+The cold is gnawing into your joints.
 
-Space_girl: Hello, I am Space girl.
-Space_girl: Who are you then?
+<<SetSprite Fel sad>>  
 
--> I like tic tace toe very much
-    <<set $player_name to "Tic Tac">>
--> The name's Mr.Beast.
-    <<set $player_name to "Mr.Beast">>
--> Kai Cenat. Why - who wants to know?
-    <<set $player_name to "Kai Cenat">>
-    <<set $space_girl_likes_you to false>>
+->Open your mind
 
-<<if $space_girl_likes_you>>
-    Space_girl: Nice to meet you {$player_name}!
-    
-<<else>>
-    Space_girl: No need to be so rude...
-    Space_girl: Maybe you should be called Grumpy {$player_name}.
-<<endif>>
+In the dim emergency light, an image flashed before your eyes. You see a dozen blinking buttons and screens in your ship’s control room, full-on Emergency lockdown mode.   
+
+A slightly robotic tone is speaking on the broadcast:
+
+Main power generator down, Emergency electricity storage activated. Please reroute power in 15 minut-
+
+A blink, and the scene was yanked away from you, returning you to the eerily quiet present. 
+
+The control room is still dimmer than usual, but you don’t see any signs of distress. 
+
+The cold is gone, leaving a fleeting memory on your skin. A sock is floating next to your head. You’re alone. 
+
+Through the viewport, you see a familiar swirl in the sea of stars surrounding a core of pure darkness, immense gravity distorting space itself in a grand spectacle. 
+
+The black hole that you’ve been observing for the past months or maybe years, yet still know so little about. 
+
+The very sight and idea of this immense thing gives you vertigo, oh, how it would calmly devour everything without a sound... 
+
+Your head swims, colors swirling at the edge of your vision. What just happened…? Is this a lucid dream?
+
+-> Something’s wrong. I need to know what’s going on.
+
+-> Proceed
+
+You wave at the door and gesture for it to open. No response. 
+
+A sweet smell is tickling at the edge of your perception. Is the door stuck?
+
+You try to slide the doors open, to no avail. It seems like a low-power shutdown has caused the doors to lock down, locking you in this control room.
+
+As you blankly stare at the doors, a hologram springs to life in front of you. It is in the image of a stern woman, with a single eye and a genuine expression of annoyance.
+
+<<fade space_women_0 in>> 
+C.L.O.T.H.O.: Ugh, I can’t believe this. Get a grip. The door’s not going to open if all you do is prod. Where do you think you are trying to get to?
+
+->Who are you?
+C.L.O.T.H.O: I’m the part of you that’s trying to get you out of this mess. I am the beginning, the first weaver of thread, your survival instinct and ambition. 
+
+Fel Atropos: That, captain, is the ship’s Central Learning and Optimization Task Heuristic Operant. C.L.O.T.H.O.. 
+
+The young man says as he casually floats over from behind you. 
+
+Fel Atropos: I wouldn’t worry about her; she’s just like that sometimes. 
+Contrary to C.L.O.T.H.O.’s formal work attire, Fel is in casual clothes as if off shift. You think this is one of your crew members, but you can’t recall the faces of anyone else. 
+
+-> Report on the situation onboard. What happened to my ship?
+-> Hang on, Fel, where did you just come from? The door’s locked.
+
+The hologram image regards Fel with visible disapproval, then turns to speak to you.
+
+C.L.O.T.H.O.: The infestation is getting worse. You need to restart the power circuits and pilot the ship out. Can’t you see it outside? Every second, we are being dragged closer to the event horizon. We don’t want to perish like that.
+
+Fel Atropos: Whoa, whoa, something’s definitely off here, and just as the captain says, I don’t think it’s wise to move an inch before we figure it out. 
+
+If artificial intelligence is capable of feeling anxiety, you would say she’s anxious.
+
+C.L.O.T.H.O.: Get your thoughts together, draw from that power. We must get out. Go. Turn. The. Generators. ON. You’re freezing. 
+
+The man sighs as if he is conceding something. For a moment, you swear he seemed to be lagging like a malfunctioning program, but he soon regains motion.
+Fel Atropos: Fine, I’d hate to bother you, but we can at least turn the lights back on if the lady insists. Can you take a look at the breaker panel over there?
+
 
 <<fade space_women_0 out>>  
 <<show_button SceneManager>>

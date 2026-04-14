@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6aca430f4f414ea439f8510194ee41b7
+guid: 1fb35ab339226f74190c96031e986fe3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4057930890152675139
-    second: Nameplate_0
+      213: 7842474340075904702
+    second: Happy ( blue)_0
+  - first:
+      213: 7665784971284013940
+    second: Happy ( blue)_1
+  - first:
+      213: 2196438025657723178
+    second: Happy ( blue)_2
+  - first:
+      213: -1423169759150057056
+    second: Happy ( blue)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +61,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 29, y: 8, z: 34, w: 8}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nameplate_0
+      name: Happy ( blue)_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0
-        width: 387
-        height: 80
+        x: 297
+        y: 2584
+        width: 74
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 9, z: 0, w: 7}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db87d51fa555fa7c0800000000000000
-      internalID: -4057930890152675139
+      spriteID: ebe17507cd016dc60800000000000000
+      internalID: 7842474340075904702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy ( blue)_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2581
+        width: 38
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47369e9f0d6526a60800000000000000
+      internalID: 7665784971284013940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy ( blue)_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2257
+        width: 85
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a292d724fb05b7e10800000000000000
+      internalID: 2196438025657723178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Happy ( blue)_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 423
+        width: 1596
+        height: 2063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a958c2f4a2ef3ce0800000000000000
+      internalID: -1423169759150057056
       vertices: []
       indices: 
       edges: []
@@ -138,8 +213,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a647fad0e1e933b40840ed0903d50d97
-    internalID: 1703613292
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Nameplate_0: -4057930890152675139
+      Happy ( blue)_0: 7842474340075904702
+      Happy ( blue)_1: 7665784971284013940
+      Happy ( blue)_2: 2196438025657723178
+      Happy ( blue)_3: -1423169759150057056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,12 @@ public class MainMenuManager : MonoBehaviour
 {
     public GameObject MainMenu, CreditsMenu;  
 
+    public void Start()
+    {
+        CloseAll();
+        OpenMainMenu();
+    }
+
     public void SwitchScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -19,7 +25,7 @@ public class MainMenuManager : MonoBehaviour
     public void OpenMainMenu()
     {
         CloseAll();
-        CreditsMenu.SetActive(true);
+        MainMenu.SetActive(true);
     }
     public void OpenCredits()
     {
