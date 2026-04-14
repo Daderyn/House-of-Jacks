@@ -1,0 +1,50 @@
+﻿title: AfterFirstGame
+---
+// Declarations (Keep these at the top or in a separate file)
+<<declare $space1_dude_likes_you = true as bool>>
+<<declare $space2_girl_likes_you = true as bool>>
+<<declare $player2_name = "" as string>>
+
+Space_dude: Welcome back.
+Space_dude: How are you doing?
+
+-> I'm Capsule, but my friends call me "Tic Tac".
+    <<set $player2_name to "Tic Tac">>
+-> The name's Triquandle.
+    <<set $player2_name to "Triquandle">>
+-> Pyramid. Why - who wants to know?
+    <<set $player2_name to "Pyramid">>
+    <<set $space1_dude_likes_you to false>> // FIXED: Added the '1'
+
+<<if $space1_dude_likes_you>>
+    Space_dude: Nice to meet you {$player2_name}!
+<<else>>
+    Space_dude: No need to be so rude... 
+    Space_dude: Maybe you should be called Grumpy {$player2_name}.
+<<endif>>
+
+Space_dude: I'll be going now.
+// Note: Ensure you have a [YarnCommand("fade")] in C# for this to work!
+<<fade space_man_0 out>>  
+
+Space_girl: Hello, I am Space girl.
+Space_girl: Who are you then?
+
+-> I like tic tac toe very much.
+    <<set $player2_name to "Tic Tac">>
+-> The name's Mr.Beast.
+    <<set $player2_name to "Mr.Beast">>
+-> Kai Cenat. Why - who wants to know?
+    <<set $player_name to "Kai Cenat">>
+    <<set $space2_girl_likes_you to false>> // FIXED: Added the '2'
+
+<<if $space2_girl_likes_you>>
+    Space_girl: Nice to meet you {$player2_name}!
+<<else>>
+    Space_girl: No need to be so rude...
+    Space_girl: Maybe you should be called Grumpy {$player2_name}.
+<<endif>>
+
+<<fade space_women_0 out>>  
+<<show_button_tree_room SceneManager2>>
+===
