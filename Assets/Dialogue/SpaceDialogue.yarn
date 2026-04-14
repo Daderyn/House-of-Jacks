@@ -8,7 +8,7 @@ Then, a fantastic swirl of coloratura and the color of grease on water, a warm a
 
 The cold is gnawing into your joints.
 
-<<SetSprite Fel sad>>  
+ 
 
 ->Open your mind
 
@@ -44,12 +44,13 @@ You try to slide the doors open, to no avail. It seems like a low-power shutdown
 
 As you blankly stare at the doors, a hologram springs to life in front of you. It is in the image of a stern woman, with a single eye and a genuine expression of annoyance.
 
-<<fade space_women_0 in>> 
+<<fade Clotho in>> 
 C.L.O.T.H.O.: Ugh, I can’t believe this. Get a grip. The door’s not going to open if all you do is prod. Where do you think you are trying to get to?
 
 ->Who are you?
 C.L.O.T.H.O: I’m the part of you that’s trying to get you out of this mess. I am the beginning, the first weaver of thread, your survival instinct and ambition. 
 
+<<fade Fel in>>
 Fel Atropos: That, captain, is the ship’s Central Learning and Optimization Task Heuristic Operant. C.L.O.T.H.O.. 
 
 The young man says as he casually floats over from behind you. 
@@ -74,7 +75,9 @@ The man sighs as if he is conceding something. For a moment, you swear he seemed
 Fel Atropos: Fine, I’d hate to bother you, but we can at least turn the lights back on if the lady insists. Can you take a look at the breaker panel over there?
 
 
-<<fade space_women_0 out>>  
+<<fade Fel out>>  
+<<fade Clotho out>>
+///<<SetSprite Fel sad>> 
 <<show_button SceneManager>>
 ===
 
