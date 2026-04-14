@@ -32,8 +32,8 @@ void Awake()
 
             // 3. Immediately switch the scene
             Debug.Log("5 Bugs cleared! Moving to the next scene.");
-            FindAnyObjectByType<Yarn.Unity.DialogueRunner>().StartDialogue("DuringTreeRoom");
-            //SceneManager.LoadScene("Scene4"); // Change "Scene4" to whatever your next scene is named
+            //FindAnyObjectByType<Yarn.Unity.DialogueRunner>().StartDialogue("DuringTreeRoom");
+            SceneManager.LoadScene("AirLock"); // Change "Scene4" to whatever your next scene is named
         }
 
         if (SwitchesOnCount >= 4)
