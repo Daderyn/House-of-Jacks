@@ -1,49 +1,73 @@
 ﻿title: DuringTreeRoom
 ---
-// Declarations (Keep these at the top or in a separate file)
-<<declare $space3_dude_likes_you = true as bool>>
-<<declare $space3_girl_likes_you = true as bool>>
-<<declare $player3_name = "" as string>>
+You cleansed the rot in the branches and roots. As the blue Juniper regains its colors, you feel a breeze sweep through. 
 
-Space_dude: That wasn't bad right?
-Space_dude: Let go and have a chat in the air lock?
+Electricity is also coming back online steadily, the ship is once more recalibrated and habitable, engines humming in peaceful balance.
 
--> I'm Capsule, but my friends call me "Tic Tac".
-    <<set $player3_name to "Tic Tac">>
--> The name's Triquandle.
-    <<set $player3_name to "Triquandle">>
--> Pyramid. Why - who wants to know?
-    <<set $player3_name to "Pyramid">>
-    <<set $space3_dude_likes_you to false>> // FIXED: Added the '1'
+In the brighter new light, you see a dim halo of what seems to be glitter surrounding the no longer solid figure of Fel Atropos. His shape and color shift like an oil film on water. 
 
-<<if $space3_dude_likes_you>>
-    Space_dude: Nice to meet you {$player3_name}!
-<<else>>
-    Space_dude: No need to be so rude... 
-    Space_dude: Maybe you should be called Grumpy {$player3_name}.
-<<endif>>
+The room is turning both sweet and rotten, two scents intertwining into a horrendous odor of powdery-sweet decay as the alien’s perception filter spasms and crumbles. 
 
-Space_dude: I'll be going now.
-// Note: Ensure you have a [YarnCommand("fade")] in C# for this to work!
-<<fade space_man_0 out>>  
+<<fade Fel in>>
+<<SetSprite Fel sad>>
+“Fel”: I was hoping it wouldn’t come to this. 
 
-Space_girl: Hello, I am Space girl.
-Space_girl: Who are you then?
+<<SetSprite Fel angry>>
+“Fel”: Why won’t you stay wwwiitthh meee? 
 
--> I like tic tac toe very much.
-    <<set $player3_name to "Tic Tac">>
--> The name's Mr.Beast.
-    <<set $player3_name to "Mr.Beast">>
--> Kai Cenat. Why - who wants to know?
-    <<set $player3_name to "Kai Cenat">>
-    <<set $space3_girl_likes_you to false>> // FIXED: Added the '2'
+The realization dawns on you, and the illusion shatters. 
 
-<<if $space3_girl_likes_you>>
-    Space_girl: Nice to meet you {$player3_name}!
-<<else>>
-    Space_girl: No need to be so rude...
-    Space_girl: Maybe you should be called Grumpy {$player3_name}.
-<<endif>>
+Standing across the room is what used to be Fel. Atropos was part of you, the end and the last weaver of the thread. But now this abomination can barely hold a humanoid shape. 
 
-<<fade space_women_0 out>>  
-===
+Its face twists and contorts, flashing between several different appearances that you recognize as your allies. The glisten of rainbow colors is now fully revealed, the sweet, warm coloratura now a shriek at the back of your head. 
+
+C.L.O.T.H.O. is nowhere to be seen. 
+
+<<SetSprite Fel angry>>
+“Fel”: Don’t I make y’all happy? Isn’t this stasis what you all want deep down? It’s in all of your minds, and I just want you all to stay with me. 
+
+The noises…ahh, the noises! Now dropping the sweet guise, the creature flares at your mind with piercing colors and sharp whispers. 
+
+-> The black hole will consume all of us if we stay in place. I can afford to be wrong, but I can’t afford to waste it all.
+
+<<fade Clotho in>>
+<<SetSprite Clotho neutral>>
+C.L.O.T.H.O.: [Her voice resonates in your head] 
+
+C.L.O.T.H.O.: Yeah, stay so he can keep draining our mind to keep us trapped. But there is one thing you fail to understand. 
+
+C.L.O.T.H.O.: Within every person, there is something that moves forward. 
+
+C.L.O.T.H.O.: There is always a desire to grow. 
+
+C.L.O.T.H.O.: Waiting in place burns energy just like anything else, yet it yields no result that replenishes the heart with satisfaction. 
+
+-> What is this? What is all of this?
+
+C.L.O.T.H.O.: Atropos used to be one of us, but this thing in front of you is not him. 
+
+C.L.O.T.H.O.: Even I know all grind and no play breaks the mind. But the creature amplified the harmless desire of escaping a decision to harmful extents, and it is bringing us all down towards the inevitable. 
+
+<<SetSprite Clotho angry>>
+C.L.O.T.H.O.: We cannot tolerate this. 
+
+
+“Fel”: If you won’t give up this pointless struggle, you can never rest. Sure, why not lose and betray yourself too. 
+
+
+<<SetSprite Fel sad>>
+“Fel”: Why rush in directions you don’t want to head just for the sake of it when you can wait for it instead? 
+
+
+<<SetSprite Fel angry>>
+“Fel”: Answer me, answer me, ANSWER ME.
+
+Stars and colors swim in your vision, the rotten sweetness and the shrieking are growing too much to bear. 
+
+Help me… 
+
+Leave me ALONE-
+
+
+<<fade Fel out>>  
+<<fade Clotho out>>
