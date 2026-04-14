@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: cb17a20261ea19746a19986422ad7ed2
+guid: ebbdbc2460fd00947833877f3b3f8219
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4878316064156448386
-    second: switch.on_0
+      213: 5500400178800371835
+    second: bug squashed 1_0
+  - first:
+      213: -5667147371906935893
+    second: bug squashed 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: switch.on_0
+      name: bug squashed 1_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 34
-        width: 216
-        height: 550
+        x: 331
+        y: 262
+        width: 395
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 286702a2d9243b340800000000000000
-      internalID: 4878316064156448386
+      spriteID: b7824ebf1d8555c40800000000000000
+      internalID: 5500400178800371835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bug squashed 1_1
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 440
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3d2b7bd7f3a51b0800000000000000
+      internalID: -5667147371906935893
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      switch.on_0: 4878316064156448386
+      bug squashed 1_0: 5500400178800371835
+      bug squashed 1_1: -5667147371906935893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb17a20261ea19746a19986422ad7ed2
+guid: c289a18a662b3814484c7f0967efb08d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4878316064156448386
-    second: switch.on_0
+      213: -5078305790759997049
+    second: airlock.base 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: switch.on_0
+      name: airlock.base 1_0
       rect:
         serializedVersion: 2
-        x: 46
+        x: 37
         y: 34
-        width: 216
-        height: 550
+        width: 886
+        height: 1136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 286702a2d9243b340800000000000000
-      internalID: 4878316064156448386
+      spriteID: 781f0f01acb3689b0800000000000000
+      internalID: -5078305790759997049
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      switch.on_0: 4878316064156448386
+      airlock.base 1_0: -5078305790759997049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

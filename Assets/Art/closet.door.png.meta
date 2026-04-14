@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb17a20261ea19746a19986422ad7ed2
+guid: 5d58895b3df6eb9439428fcb1c6d2209
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4878316064156448386
-    second: switch.on_0
+      213: -8624565281815249601
+    second: closet.door_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: switch.on_0
+      name: closet.door_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 34
-        width: 216
-        height: 550
+        x: 112
+        y: 43
+        width: 808
+        height: 955
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 286702a2d9243b340800000000000000
-      internalID: 4878316064156448386
+      spriteID: f3d3c3332936f4880800000000000000
+      internalID: -8624565281815249601
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      switch.on_0: 4878316064156448386
+      closet.door_0: -8624565281815249601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
