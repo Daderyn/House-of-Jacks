@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement; 
 public class SpriteChanger : MonoBehaviour
 {
     [SerializeField] private Image targetImage;   
@@ -9,26 +9,61 @@ public class SpriteChanger : MonoBehaviour
     public Sprite newBackground;
     private Image backgroundImage;
     private bool hasChanged = false;
-    public void FinishedAnimation()
-    {
-        //idea is if the fourth of fifth switch was pressed from off to on then that would trigger the navbutton to navigate you back
-        //to the control room.
-        // also idea for yarnspinner is that you have a boolean value that let say minigame_dialogue = false initially then you set it to be true once 
-        //space women finished talking and then you click the nav buton to the minigame. 
+
+    public static int SwitchesOnCount; // The global counter
+   public static GameObject globalNavButton;
+    [SerializeField] private GameObject navButtonAssignment; // Use this for the Inspector
+
+void Awake() 
+{
+    SwitchesOnCount = 0; // Reset counter
+    // Link the inspector slot to our static variable so everyone can see it
+    if (navButtonAssignment != null) {
+        globalNavButton = navButtonAssignment;
+        
     }
+}
     void Update()
     {
         if (!hasChanged && FadeAnimation2.BugCounter >= 5) 
         {
             ChangeBackground();
+            hasChanged = true; 
+
+            // 3. Immediately switch the scene
+            Debug.Log("5 Bugs cleared! Moving to the next scene.");
+            //FindAnyObjectByType<Yarn.Unity.DialogueRunner>().StartDialogue("DuringTreeRoom");
+            SceneManager.LoadScene("AirLock"); // Change "Scene4" to whatever your next scene is named
         }
+
+        if (SwitchesOnCount >= 4)
+    {
+        Debug.Log("All tasks complete! Transitioning...");
+        
+        // Reset the counter so it doesn't try to load the scene 60 times a second
+        SwitchesOnCount = 0; 
+        
+        // Option A: Instant jump
+        SceneManager.LoadScene("AfterMiniGame1");
+    }
     }
     public void ChangeSprite()
     {
         if (targetImage != null && newSprite != null)
+    {
+        targetImage.sprite = newSprite;
+        SwitchesOnCount++;
+        Debug.Log("Switches flipped: " + SwitchesOnCount);
+
+        // Use the GLOBAL reference now
+        if (SwitchesOnCount >= 4 && globalNavButton != null)
         {
-            targetImage.sprite = newSprite;
+            globalNavButton.SetActive(true);
+            Debug.Log("Global Nav Button Activated!");
         }
+        
+        if(GetComponent<Button>() != null) GetComponent<Button>().interactable = false;
+    }
     }
     void ChangeBackground() {
       if (backgroundImage == null) {
