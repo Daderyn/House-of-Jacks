@@ -1,50 +1,83 @@
 ﻿title: AfterFirstGame
 ---
-// Declarations (Keep these at the top or in a separate file)
-<<declare $space1_dude_likes_you = true as bool>>
-<<declare $space2_girl_likes_you = true as bool>>
-<<declare $player2_name = "" as string>>
+As your hands fall on the interface panel, suddenly the two companions are gone, and you are alone in the control room, desperately rewiring the ship’s electricity supplies as the cold seeps in and your chest grows heavy from anxiety. You are alone in the middle of chaos, your crew fallen to the malice of some alien phenomenon. 
 
-Space_dude: Welcome back.
-Space_dude: How are you doing?
+You come to your senses in a few blinks. 
 
--> I'm Capsule, but my friends call me "Tic Tac".
-    <<set $player2_name to "Tic Tac">>
--> The name's Triquandle.
-    <<set $player2_name to "Triquandle">>
--> Pyramid. Why - who wants to know?
-    <<set $player2_name to "Pyramid">>
-    <<set $space1_dude_likes_you to false>> // FIXED: Added the '1'
+The strange vision quickly recedes, and you notice the room is slightly brighter. The phantom cold that ebbs in and out of perception seems to be subsiding as well. Is it because the ship is fixed in the *real world*? When you look down the corridor once more, the door to the garden module silently slides open.
 
-<<if $space1_dude_likes_you>>
-    Space_dude: Nice to meet you {$player2_name}!
-<<else>>
-    Space_dude: No need to be so rude... 
-    Space_dude: Maybe you should be called Grumpy {$player2_name}.
-<<endif>>
+<<fade Fel in>>
+Fel Atropos: …as I was saying, we shouldn’t be moving without a CLEAR idea of what’s going on. You’ve seen horror movies. Better safe for now than running into something crazy and losing our lives and research. Surely it won’t hurt to make more informed decisions?
 
-Space_dude: I'll be going now.
-// Note: Ensure you have a [YarnCommand("fade")] in C# for this to work!
-<<fade space_man_0 out>>  
+<<fade Clotho in>>
+C.L.O.T.H.O.: Enough. Now move, idiot, you don’t look like you’re actively investigating this area anyway. What’s staying going to do for you? We must get this ship back online. The tides of gravity won’t slow down while you blabber. 
 
-Space_girl: Hello, I am Space girl.
-Space_girl: Who are you then?
+Fel stares at C.L.O.T.H.O. thoughtfully, but wordlessly follows you into the garden module. As he crossed the threshold, a smear of rainbow colors rippled across his skin.
 
--> I like tic tac toe very much.
-    <<set $player2_name to "Tic Tac">>
--> The name's Mr.Beast.
-    <<set $player2_name to "Mr.Beast">>
--> Kai Cenat. Why - who wants to know?
-    <<set $player_name to "Kai Cenat">>
-    <<set $space2_girl_likes_you to false>> // FIXED: Added the '2'
+The first plant to be grown and consumed in space was a red romaine lettuce species, grown in clay medium and fed with RGB lights. Besides providing salad, these plants also synthesize oxygen and are an integral part of the life support system. 
 
-<<if $space2_girl_likes_you>>
-    Space_girl: Nice to meet you {$player2_name}!
-<<else>>
-    Space_girl: No need to be so rude...
-    Space_girl: Maybe you should be called Grumpy {$player2_name}.
-<<endif>>
+For your ship, the garden includes much more than lettuce. These plants are specially selected to thrive in low-gravity environments, and you know for certain there are no plant pests or viruses on board this ship.
 
-<<fade space_women_0 out>>  
+So why are the cabbages half dead, the potato shoots rotting, and the once graceful blue Juniper in the middle of the room turning grey and orange? 
+
+A light smell of rot slowly rises to meet your senses. Behind the plants, the black hole swirls outside the viewport, a million stars converging into one abyss of nothing. 
+
+Is it your imagination, or is the void somehow closer? 
+
+<<SetSprite Clotho surprise>>
+C.L.O.T.H.O.: Environmental hazard identified, oxygen level low. Preliminary diagnosis based on sensor info suggests no ailment; this could be due to a pest.
+
+<<SetSprite Fel angry>>
+Fel Atropos: I’m sorry, boss, I think the AI is crazy. How in hell could we have pests on a spaceship? Not that I’m against gardening, but this doesn’t seem like the time. 
+
+<<SetSprite Clotho angry>>
+C.L.O.T.H.O.: [the hologram squints at Fel with suspicion]: What are you trying to get at? 
+
+<<SetSprite Fel surprise>>
+Fel Atropos: Surely there are oxygen tanks somewhere, or perhaps existing reserves can last longer. This garden isn’t built to be the main oxygen supply. Maybe the black hole is influencing the ship somehow. You should focus on that! Besides, you didn’t come all this way to be a gardener.
+
+The sweetness in the air returned, this time more prominent, stronger. 
+
+Swirls of color tug at the edge of your vision, and your mind blurs. For a brief moment, the blue Juniper canopies seem to come back to life, flourishing in a dazzling magnificence you’ve never seen. 
+
+-> This is all very weird…I guess you have a point, though. I can get to the observations…
+
+<<SetSprite Fel happy>>
+Fel Atropos: Of course you will!
+
+<<SetSprite Clotho angry>>
+[He gives C.L.O.T.H.O. a pointed look] 
+
+<<SetSprite Fel happy>>
+Fel Atropos: And we can all respect that, yeah? I’m counting on your observations. Let’s get out of here. 
+
+C.L.O.T.H.O. zaps from one projector to another, shooting up to float between you and Fel. Her eye bores into yours with a glow as she presses a forcefield hand down on your chest. 
+
+<<SetSprite Clotho angry>>
+C.L.O.T.H.O.: Listen. Oxygen synthesis has been lower than expected for the past week, and you are already through the stocked ones. Only you can clean the problem out, only you can make this choice. 
+
+<<SetSprite Clotho neutral>>
+C.L.O.T.H.O.: We don’t need air, but you do.
+
+-> I know this is all in my head. Why should I trust you at all?
+C.L.O.T.H.O.: Because this is how you’ve made it so far, and this is how you move on. 
+C.L.O.T.H.O.: I know you can wake up before it gets worse. Something is leeching away at our energy; don’t let it consume you. 
+
+-> I’ll head to the observations. I think that’s the right way.
+C.L.O.T.H.O.: You have no choice here. Wake up! 
+C.L.O.T.H.O.: Dreams and ambitions are null when you don’t have life support. At least take a look at the tree before you dismiss this notion. 
+
+Her words drive off the floating colors in your vision for a moment, and the weight on your chest returns alongside the slight ooziness of breathlessness. The sweetness falters as the scent of rot and soil returns. 
+
+You notice how she seems to be glowing more solid than ever in a burst of desperate energy. Around her, the room seems to spasm with static, visions of your desolate reality reaching you through the cracks. 
+
+<<SetSprite Clotho neutral>>
+C.L.O.T.H.O.: Quickly now, don’t let the thing stop you from escaping. There’s still time before reaching the event horizon, but the longer we stall, the more momentum we must overcome. 
+
+You’re sure of one thing. You need oxygen, and there are no backup tanks on the ship.
+
+<<fade Fel out>>  
+<<fade Clotho out>>
+
 <<show_button_tree_room SceneManager2>>
 ===

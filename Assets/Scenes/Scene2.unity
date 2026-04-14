@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -431,7 +431,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 378, y: 222}
-  m_SizeDelta: {x: 92.6722, y: 74.3751}
+  m_SizeDelta: {x: 92.6722, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337983890
 MonoBehaviour:
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteChanger
   targetImage: {fileID: 337983892}
-  newSprite: {fileID: -2496724208177761274, guid: d873bd35df10ee0469d8f1b952935c64, type: 3}
+  newSprite: {fileID: 4878316064156448386, guid: cb17a20261ea19746a19986422ad7ed2, type: 3}
   newBackground: {fileID: 0}
   navButtonAssignment: {fileID: 0}
 --- !u!114 &337983891
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7820360600818329142, guid: 011a8b30f07e086448ea91e9948d9fc9, type: 3}
+  m_Sprite: {fileID: 2246668472383363088, guid: 3ba71f9d7f3970146b3e4ccd8aeef306, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -680,6 +680,81 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &415254278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415254279}
+  - component: {fileID: 415254281}
+  - component: {fileID: 415254280}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!224 &415254279
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415254278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99998933, y: 0.99998933, z: 0.99998933}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 710177156}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &415254280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415254278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7140c5772e3e20845ba3a98571c48bb2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &415254281
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415254278}
+  m_CullTransparentMesh: 1
 --- !u!1 &538062201
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -855,7 +930,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 163, y: 222}
-  m_SizeDelta: {x: 92.6722, y: 74.3751}
+  m_SizeDelta: {x: 92.6722, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649540252
 MonoBehaviour:
@@ -870,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteChanger
   targetImage: {fileID: 649540254}
-  newSprite: {fileID: -2496724208177761274, guid: d873bd35df10ee0469d8f1b952935c64, type: 3}
+  newSprite: {fileID: 4878316064156448386, guid: cb17a20261ea19746a19986422ad7ed2, type: 3}
   newBackground: {fileID: 0}
   navButtonAssignment: {fileID: 0}
 --- !u!114 &649540253
@@ -949,7 +1024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7820360600818329142, guid: 011a8b30f07e086448ea91e9948d9fc9, type: 3}
+  m_Sprite: {fileID: 2246668472383363088, guid: 3ba71f9d7f3970146b3e4ccd8aeef306, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1177,18 +1252,21 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 0
-      addedObject: {fileID: 2055306829}
+      addedObject: {fileID: 415254279}
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 1
-      addedObject: {fileID: 952915714}
+      addedObject: {fileID: 2055306829}
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 2
-      addedObject: {fileID: 1345066450}
+      addedObject: {fileID: 952915714}
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 3
-      addedObject: {fileID: 649540251}
+      addedObject: {fileID: 1345066450}
     - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
       insertIndex: 4
+      addedObject: {fileID: 649540251}
+    - targetCorrespondingSourceObject: {fileID: 2355361765340444347, guid: 52571f68872914e24837210513edea1d, type: 3}
+      insertIndex: 5
       addedObject: {fileID: 337983889}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9078442560890639579, guid: 52571f68872914e24837210513edea1d, type: 3}
@@ -1234,7 +1312,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -207, y: 222}
-  m_SizeDelta: {x: 92.6722, y: 74.3751}
+  m_SizeDelta: {x: 92.6722, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952915715
 MonoBehaviour:
@@ -1249,7 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteChanger
   targetImage: {fileID: 952915717}
-  newSprite: {fileID: -2496724208177761274, guid: d873bd35df10ee0469d8f1b952935c64, type: 3}
+  newSprite: {fileID: 4878316064156448386, guid: cb17a20261ea19746a19986422ad7ed2, type: 3}
   newBackground: {fileID: 0}
   navButtonAssignment: {fileID: 0}
 --- !u!114 &952915716
@@ -1328,7 +1406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7820360600818329142, guid: 011a8b30f07e086448ea91e9948d9fc9, type: 3}
+  m_Sprite: {fileID: 2246668472383363088, guid: 3ba71f9d7f3970146b3e4ccd8aeef306, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1396,7 +1474,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -15, y: 222}
-  m_SizeDelta: {x: 92.6722, y: 74.3751}
+  m_SizeDelta: {x: 92.6722, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345066452
 MonoBehaviour:
@@ -1474,7 +1552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7820360600818329142, guid: 011a8b30f07e086448ea91e9948d9fc9, type: 3}
+  m_Sprite: {fileID: 2246668472383363088, guid: 3ba71f9d7f3970146b3e4ccd8aeef306, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1505,7 +1583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteChanger
   targetImage: {fileID: 1345066453}
-  newSprite: {fileID: -2496724208177761274, guid: d873bd35df10ee0469d8f1b952935c64, type: 3}
+  newSprite: {fileID: 4878316064156448386, guid: cb17a20261ea19746a19986422ad7ed2, type: 3}
   newBackground: {fileID: 0}
   navButtonAssignment: {fileID: 0}
 --- !u!1 &1907913522
@@ -1565,7 +1643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
