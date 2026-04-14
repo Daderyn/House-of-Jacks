@@ -1,4 +1,4 @@
-﻿title: Start
+title: Start
 ---
 
 
@@ -44,33 +44,40 @@ You try to slide the doors open, to no avail. It seems like a low-power shutdown
 
 As you blankly stare at the doors, a hologram springs to life in front of you. It is in the image of a stern woman, with a single eye and a genuine expression of annoyance.
 
-<<fade Clotho in>> 
+<<fade Clotho in>>
+<<SetSprite Clotho neutral>> 
 C.L.O.T.H.O.: Ugh, I can’t believe this. Get a grip. The door’s not going to open if all you do is prod. Where do you think you are trying to get to?
 
 ->Who are you?
 C.L.O.T.H.O: I’m the part of you that’s trying to get you out of this mess. I am the beginning, the first weaver of thread, your survival instinct and ambition. 
 
 <<fade Fel in>>
+<<SetSprite Fel neutral>>
 Fel Atropos: That, captain, is the ship’s Central Learning and Optimization Task Heuristic Operant. C.L.O.T.H.O.. 
 
 The young man says as he casually floats over from behind you. 
 
+<<SetSprite Fel happy>>
 Fel Atropos: I wouldn’t worry about her; she’s just like that sometimes. 
 Contrary to C.L.O.T.H.O.’s formal work attire, Fel is in casual clothes as if off shift. You think this is one of your crew members, but you can’t recall the faces of anyone else. 
 
 -> Report on the situation onboard. What happened to my ship?
 -> Hang on, Fel, where did you just come from? The door’s locked.
 
+<<SetSprite Clotho angry>>
 The hologram image regards Fel with visible disapproval, then turns to speak to you.
 
 C.L.O.T.H.O.: The infestation is getting worse. You need to restart the power circuits and pilot the ship out. Can’t you see it outside? Every second, we are being dragged closer to the event horizon. We don’t want to perish like that.
 
+<<SetSprite Fel surprise>>
 Fel Atropos: Whoa, whoa, something’s definitely off here, and just as the captain says, I don’t think it’s wise to move an inch before we figure it out. 
 
 If artificial intelligence is capable of feeling anxiety, you would say she’s anxious.
 
+<<SetSprite Clotho neutral>>
 C.L.O.T.H.O.: Get your thoughts together, draw from that power. We must get out. Go. Turn. The. Generators. ON. You’re freezing. 
 
+<<SetSprite Fel neutral>>
 The man sighs as if he is conceding something. For a moment, you swear he seemed to be lagging like a malfunctioning program, but he soon regains motion.
 Fel Atropos: Fine, I’d hate to bother you, but we can at least turn the lights back on if the lady insists. Can you take a look at the breaker panel over there?
 
