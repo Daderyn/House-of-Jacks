@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: d6078ea4e2097ec418332ad64bdfe007
+  - enabled: 1
+    path: Assets/Scenes/AfterMiniGame1.unity
+    guid: 47bbde5e045ad244aba36a56b8a39244
+  - enabled: 1
+    path: Assets/Scenes/TreeRoom.unity
+    guid: 9867b36bed53bfb48b0a2b0e1a747021
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
